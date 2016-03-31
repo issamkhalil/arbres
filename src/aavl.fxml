@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import application.MaterialText?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.ComboBox ?>
+<?import javafx.scene.control.SplitPane ?>
+<?import javafx.scene.control.Label ?>
+<?import javafx.scene.control.ScrollPane ?>
+<?import javafx.scene.layout.*?>
+<?import application.* ?>
+<Pane fx:controller="arbreAVL.ArbreAVLController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+         <AnchorPane id="AnchorPane"  
+                    prefHeight="546.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+              <children>
+      <SplitPane dividerPositions="0.22426470588235295" layoutX="1.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="546.0"
+                 prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" 
+                 AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="144.0" prefWidth="798.0" style="-fx-background-color: #fff" 
+                      SplitPane.resizableWithParent="false">
+               <children>
+                 <TextInput fx:id="champ_text1" promptText="saisir la valeur du noeud"  layoutX="200.0" 
+                            layoutY="17.0" prefHeight="25.0" prefWidth="410.0" />
+                 
+               <Button fx:id="btn11" layoutX="200.0" style="-fx-background-color: #3c763d; "  layoutY="70.0" mnemonicParsing="false"
+                       textFill="white"  prefHeight="35.0" prefWidth="130.0" text="Insérer un noeud" 
+               onAction="#ajouterElem" 
+               />
+          
+               <Button fx:id="btn12" layoutX="340.0"  layoutY="70.0" mnemonicParsing="false"
+                      textFill="white"  prefHeight="35.0" prefWidth="130.0" 
+                       style="-fx-background-color: #31708f" onAction="#chercherElem"  text="chercher un noeud" />
+          
+               <Button fx:id="btn13" layoutX="480" layoutY="70.0" mnemonicParsing="false"
+                        textFill="white"  style="-fx-background-color: #843534"  prefHeight="35.0" onAction="#supprimerElem"  prefWidth="130.0" text="Supprimer un noeud" />
+          
+               
+                  <Label fx:id="label" layoutX="720.0" layoutY="75"    prefHeight="25.0" prefWidth="226.0" textAlignment="CENTER" textFill="#e81212">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+
+                  <ImageView fitHeight="84.0" fitWidth="140.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/avl.png" />
+                     </image>
+
+                  </ImageView>
+
+                  <Button fx:id="btn3" layoutX="720.0" layoutY="17.0" mnemonicParsing="false" prefHeight="40.0" onAction="#effacerLArbreAction"  
+                          prefWidth="110.0" text="Effacer l'arbre" />
+                  <Button fx:id="btn4" layoutX="840.0" layoutY="17.0" mnemonicParsing="false" onAction="#genererUNArbreAction" prefHeight="40.0"
+                          prefWidth="110" text="Générer un arbre"  />
+              
+
+               </children>
+            </AnchorPane>
+            
+          <AnchorPane fx:id="panel">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" 
+                              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <content>
+                      <AnchorPane fx:id="pan" minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="827.0" style="-fx-background-color: GHOSTWHITE;" />
+                    </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
+
+   </children>
+</Pane>

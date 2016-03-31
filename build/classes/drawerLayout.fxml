@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import application.MaterialText?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView  fitWidth="400.0" pickOnBounds="true" preserveRatio="true" >
+            <image>
+                <Image  url="@/drawerImg.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="200" fitWidth="116" layoutX="64.0" layoutY="45.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@/user.png"/>
+            </image>
+        </ImageView>
+      
+   
+        <VBox layoutX="20.0" layoutY="550.0" prefHeight="50.0" prefWidth="360.0">
+            <children>
+        <MaterialText fill="BLUE" textAlignment="CENTER" layoutX="30.0"  text="tout les droit réserver à Issam Arts et à GLSID Créations © 2015 - 2016 " wrappingWidth="360.0">
+            <font>
+                <Font size="15"/>
+            </font>
+        </MaterialText>
+            </children>
+        </VBox>
+    
+        
+       <VBox  layoutX="20.0" layoutY="300.0" prefHeight="50.0" prefWidth="360.0">
+            <children>
+        <MaterialText fill="BLACK" layoutX="130"  text="A propos" textAlignment="CENTER"  wrappingWidth="360">
+            <font>
+                <Font size="22"/>
+            </font>
+        </MaterialText>
+      
+      
+          <ImageView style="-fx-background-radius:50"    fitHeight="80" fitWidth="300" 
+                   preserveRatio="true" layoutX="25"   >
+            <image>
+                <Image url="@/logo.png"/>
+            </image>
+        </ImageView>
+                        
+        <MaterialText fill="BLACK" layoutX="30.0"  text="Application créer pour tester les differents algorithme sur les arbres Rouge et Noire, AVL, et 2 3 4 cette application est créer par KHALIL Issam GLSID2 2015-2016." wrappingWidth="360.0">
+            <font>
+                <Font size="15"/>
+            </font>
+        </MaterialText>
+            </children>
+        </VBox>
+    
+              
+        <MaterialText fill="WHITE" layoutX="200.0" layoutY="100.0" text="GLSID 2 ENSETM"  wrappingWidth="200.0">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </MaterialText>
+    </children>
+</Pane>
